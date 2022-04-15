@@ -27,7 +27,7 @@ def main():
     lbl_name.grid(row=0, column=0, padx=10, pady=10)
 
     entry_name = ttk.Entry(frm_input_top)
-    entry_name.grid(row=0, column=1, pady=10)
+    entry_name.grid(row=0, column=1, padx=10, pady=10)
 
     def btn_get_info_click():
         name = entry_name.get()
@@ -57,7 +57,7 @@ def main():
     lbl_attack = ttk.Label(frm_stats_btmright, text='Attack:')
     lbl_attack.grid(row=1, column=0, padx= (10,0), sticky=E)
     prg_attack = ttk.Progressbar(frm_stats_btmright, length=200, maximum=255.0)
-    prg_attack.grid(row=1, column=1, padx= (0,10))
+    prg_attack.grid(row=1, column=1, padx= (0,10), pady=10)
 
     lbl_defense = ttk.Label(frm_stats_btmright, text='Defense:')
     lbl_defense.grid(row=2, column=0, padx= (10,0), pady=10, sticky=E)
